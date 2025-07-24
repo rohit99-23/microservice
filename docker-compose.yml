@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  user-service:
+  user_service:
     build: ./user-service
     ports:
       - "5000:5000"
@@ -15,7 +15,7 @@ services:
       - DB_USER=postgres
       - DB_PASS=postgres
 
-  data-service:
+  data_service:
     build: ./data-service
     ports:
       - "5001:5000"
