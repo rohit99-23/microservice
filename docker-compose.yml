@@ -15,11 +15,11 @@ services:
       - DB_USER=postgres
       - DB_PASS=postgres
 
-  data_service:
+  data-service:
     build: ./data-service
     ports:
       - "5001:5000"
-    depends_on:
+    depends-on:
       - redis
       - postgres
     environment:
