@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   user_service:
-    build: ./user-service
+    build: ./user_service
     ports:
       - "5000:5000"
     depends_on:
@@ -16,7 +16,7 @@ services:
       - DB_PASS=postgres
 
   data_service:
-    build: ./data-service
+    build: ./data_service
     ports:
       - "5001:5000"
     depends_on:
